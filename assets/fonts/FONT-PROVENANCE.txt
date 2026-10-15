@@ -1,0 +1,15 @@
+Official Google Fonts assets, retrieved 2026-10-15.
+
+CSS source:
+https://fonts.googleapis.com/css2?family=Inter:wght@400..600&family=Source+Serif+4:wght@400..500&display=swap
+
+Inter Latin variable WOFF2 (weights 400–600):
+https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2
+License: Inter-OFL.txt; source https://raw.githubusercontent.com/google/fonts/main/ofl/inter/OFL.txt
+
+Source Serif 4 Latin variable WOFF2 (weights 400–500):
+https://fonts.gstatic.com/s/sourceserif4/v15/vEFF2_tTDB4M7-auWDN0ahZJW3IX2ih5nk3AucvUHf6kDXr4.woff2
+License: SourceSerif4-OFL.txt; source https://raw.githubusercontent.com/google/fonts/main/ofl/sourceserif4/OFL.txt
+
+Both fonts are licensed under the SIL Open Font License, Version 1.1.
+No modifications made to font files.

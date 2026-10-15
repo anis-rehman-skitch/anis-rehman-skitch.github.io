@@ -1,0 +1,194 @@
+/* Crimson, charcoal and white: the current site-wide colour system.
+   Loaded last; original photographs, institutional marks and certificates retain their colours. */
+:root {
+  --navy: #1d222b;
+  --navy-dark: #101217;
+  --ink: #20232a;
+  --muted: #555a63;
+  --red: #be123c;
+  --paper: #ffffff;
+  --line: #d9d8d6;
+  --accent: #be123c;
+  --accent-dark: #940d2d;
+  --tint: #f6f5f3;
+  --teal: #303640;
+  --coral: #9f1239;
+  --gold: #d3a44c;
+  --gold-text: #805b18;
+  --metrics-journal: #be123c;
+  --metrics-conference: #080a0f;
+}
+::selection { background: #be123c; color: #fff; }
+.site-header { border-top: 3px solid var(--accent); border-bottom-color: var(--line); }
+.monogram { border-radius: 6px; }
+.button, .main-nav .nav-cv { box-shadow: 0 4px 12px #940d2d14; }
+.button-outline { border-color: #7c7f84; box-shadow: none; }
+.button-outline:hover { background: #fff; }
+.text-link { border-color: var(--accent); }
+.hero .eyebrow { background: #fff; border-color: #a5a4a1; border-radius: 4px; }
+.eyebrow-rule { background: var(--accent); }
+.portrait:before { background: var(--accent); border-radius: 240px 240px 20px 20px; }
+.portrait:after { background: var(--navy); }
+.portrait-photo:before { background: var(--gold); }
+.portrait figcaption { border-color: #d3d1cd; border-left: 4px solid var(--accent); border-radius: 6px; box-shadow: 0 9px 28px #20232a20; }
+.portrait-label { color: var(--accent); }
+.hero-footnote span:nth-child(1) { background: var(--accent); border-color: var(--accent); color: #fff; }
+.hero-footnote span:nth-child(2) { background: var(--navy); border-color: var(--navy); color: #fff; }
+.hero-footnote span:nth-child(3) { background: #fff; border-color: var(--gold-text); color: var(--gold-text); }
+.hero-recognition { background: var(--navy); border-left-color: var(--gold); color: #fff; border-radius: 0 4px 4px 0; }
+.hero-recognition span { color: #fff; }
+.hero-recognition:hover, .hero-recognition:hover span { background: #101217; color: #fff; }
+.hero-recognition:focus-visible { outline-color: var(--accent); }
+.hero-quick-links a:not(.hero-recognition) { border-color: var(--accent); }
+.institution-logo img[src$='hust.png'] { background: var(--navy); }
+.stat:nth-child(2) strong { color: var(--navy); }
+.stat:nth-child(3) strong { color: var(--gold-text); }
+
+/* Clear hierarchy: the platform cards are bold, the detailed charts stay white. */
+.metrics-section { background: #f6f5f3; border-color: var(--line); }
+.research-profile-card {
+  --profile-accent: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  border-top-width: 4px;
+  border-radius: 6px;
+  box-shadow: 0 7px 18px #20232a0e;
+}
+.research-profile-card.scopus-profile { --profile-accent: #fff; background: var(--navy); border-color: var(--navy); }
+.research-profile-card.scival-profile { --profile-accent: #fff; background: var(--accent-dark); border-color: var(--accent-dark); }
+.research-profile-card h3, .research-profile-kind, .research-profile-name,
+.research-profile-description, .research-profile-description a,
+.research-profile-identifier, .research-profile-access, .research-profile-link { color: #fff; }
+.research-profile-card h3 { font-size: 30px; }
+.research-profile-kind { letter-spacing: 1.5px; }
+.research-profile-link { border-color: #fff; }
+.research-profile-link:hover, .research-profile-description a:hover { color: #fff; text-decoration: underline; }
+.scopus-profile .research-profile-identifier { color: var(--gold); }
+.research-profile-note { border-color: #ceccc8; }
+.metrics-refresh { border-color: #9c9b98; color: var(--accent); background: #fff; }
+.metrics-refresh:hover { background: var(--accent); border-color: var(--accent); color: #fff; }
+.metric-card { --metric-accent: var(--accent); border-color: #c9c8c5; border-top: 4px solid var(--metric-accent); border-radius: 6px; }
+.metric-card:nth-child(1) { background: var(--accent); border-color: var(--accent); }
+.metric-card:nth-child(1) .metric-label, .metric-card:nth-child(1) strong[data-metric],
+.metric-card:nth-child(1) .metric-caption { color: #fff; }
+.metric-card:nth-child(2) { --metric-accent: var(--navy); }
+.metric-card:nth-child(3) { --metric-accent: var(--accent); }
+.metric-card:nth-child(4) { --metric-accent: var(--gold-text); }
+.metrics-chart { border-color: #c9c8c5; border-radius: 6px; }
+.metrics-donut-track { stroke: #e5e3df; }
+.metrics-bar-track { background: #e8e5e0; }
+.metrics-bar-fill { background: var(--accent); }
+.metrics-table-wrap { border-color: #c9c8c5; }
+.metrics-table th { background: #efedeb; color: var(--ink); }
+.metrics-table td { border-color: #d9d8d6; }
+.metrics-details { border-color: #b9b7b3; }
+
+/* Solid colour panels replace the former pale research boxes. */
+.research-section { background: #fff; }
+.research-item, .research-item:nth-child(4) {
+  --card-accent: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 6px 16px #20232a0e;
+}
+.research-item:nth-child(2), .research-item:nth-child(3) {
+  --card-accent: #fff;
+  background: var(--navy);
+  border-color: var(--navy);
+}
+.research-item h3, .research-item p, .research-item a, .research-number { color: #fff; }
+.research-item:nth-child(2) .research-number, .research-item:nth-child(3) .research-number { color: var(--gold); }
+.research-item a { text-decoration: underline; text-decoration-thickness: 1px; }
+.research-item a:hover { color: #fff; }
+.doctoral { background: #fff; border-color: #c9c8c5; border-left: 4px solid var(--accent); border-radius: 6px; }
+.featured-publications .publication:nth-child(2) { border-top-color: var(--navy); }
+.featured-publications .publication:nth-child(3) { border-top-color: var(--accent); }
+.featured-publications .publication:nth-child(4) { border-top-color: var(--navy); }
+.citation-box { background: #f6f5f3; border-color: #c9c8c5; }
+.copy-citation { border-color: #9c9b98; }
+.degree-level { color: var(--accent); }
+
+/* The certificate remains the original; its surrounding feature becomes charcoal. */
+.ranking-feature {
+  --recognition-accent: #d3a44c;
+  background: var(--navy);
+  border-color: var(--navy);
+  border-top: 4px solid var(--gold);
+  border-radius: 8px;
+}
+.ranking-copy h3, .ranking-description, .ranking-period { color: #fff; }
+.ranking-issuer, .ranking-copy .award-kicker { color: var(--gold); }
+.ranking-links .text-link { color: #fff; border-color: var(--gold); }
+.ranking-links .text-link:hover { color: var(--gold); border-color: var(--gold); }
+.ranking-preview { border-color: #d5d2cc; border-radius: 4px; }
+.award-feature { --recognition-accent: var(--accent); --recognition-tint: #fff; }
+.award-feature:nth-child(2) { --recognition-accent: var(--navy); --recognition-tint: #fff; }
+.award-feature:nth-child(3) { --recognition-accent: var(--accent); --recognition-tint: #fff; }
+.award-preview { border: 1px solid #d4d1cc; border-top: 0; }
+.recognition-jump a,
+.recognition-jump a[href="#rankings"], .recognition-jump a[href="#reviewing"],
+.recognition-jump a[href="#development"] { background: #fff; border-color: #8f8e8a; color: var(--ink); }
+.recognition-jump a[href="#rankings"] { background: var(--navy); border-color: var(--navy); color: #fff; }
+.recognition-jump a[href="#awards"] { background: var(--accent); border-color: var(--accent); color: #fff; }
+.recognition-jump a:hover { background: var(--accent-dark); color: #fff; border-color: var(--accent-dark); }
+.credential-card { --recognition-accent: var(--accent); }
+.credential-card:nth-child(3n + 2) { --recognition-accent: var(--navy); }
+.credential-card:nth-child(3n) { --recognition-accent: var(--accent-dark); }
+.credential-preview { background: #fff; border-color: #c9c8c5; }
+.credential-card.compact,
+.credential-card.compact:nth-child(3n + 2), .credential-card.compact:nth-child(3n) {
+  background: #fff;
+  border: 1px solid #d1cfcb;
+  border-top: 3px solid var(--recognition-accent);
+  border-radius: 6px;
+}
+
+.writing-card, .writing-card:nth-child(2), .writing-card:nth-child(3) {
+  --writing-accent: var(--accent);
+  background: #fff;
+  border: 1px solid #ccc9c5;
+  border-top: 4px solid var(--writing-accent);
+  border-radius: 6px;
+}
+.writing-card:nth-child(2) { --writing-accent: var(--navy); }
+.writing-card:nth-child(3) { --writing-accent: var(--accent-dark); }
+.writing-outlet { color: #fff; background: var(--writing-accent); padding: 6px 10px; border-radius: 3px; }
+.writing-card h3 a:hover { color: var(--accent); }
+
+/* A decisive closing section, with readable white text and a crimson contact button. */
+.contact-section { background: var(--navy); border-color: var(--navy); color: #fff; }
+.contact-section .eyebrow { color: var(--gold); }
+.contact-grid h2, .contact-grid p, .contact-info .email-link,
+.contact-profiles a, .copy-email { color: #fff; }
+.contact-label { color: var(--gold)!important; }
+.contact-info { border-color: #686b72; }
+.email-link:hover, .contact-profiles a:hover { color: var(--gold); }
+.copy-email { border-color: #fff; }
+.copy-email:hover { color: var(--gold); border-color: var(--gold); }
+.site-footer { background: #101217; border-top-color: var(--accent); color: #fff; }
+.footer-inner strong, .footer-links a { color: #fff; }
+.footer-links a:hover { color: var(--gold); }
+.research-profile-card a:focus-visible, .research-item a:focus-visible,
+.ranking-feature a:focus-visible, .contact-section a:focus-visible,
+.contact-section button:focus-visible, .site-footer a:focus-visible { outline-color: #fff; }
+
+.page-hero { border-color: var(--line); }
+.page-count { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filters { background: #f6f5f3; border-color: #c9c8c5; border-top-color: var(--accent); border-radius: 6px; }
+.filter-field input, .filter-field select { background: #fff; border-color: #8f8e8a; }
+
+@media (hover: hover) {
+  .research-profile-card:hover, .writing-card:hover { box-shadow: 0 8px 22px #20232a18; }
+}
+@media print {
+  .page-count { background: #fff; color: #20232a; border-color: #555; }
+  .research-profile-card, .research-profile-card.scopus-profile, .research-profile-card.scival-profile,
+  .research-item, .research-item:nth-child(2), .research-item:nth-child(3), .research-item:nth-child(4),
+  .ranking-feature, .metric-card:nth-child(1), .contact-section, .site-footer, .writing-outlet {
+    background: #fff; border-color: #555; box-shadow: none;
+  }
+  .research-profile-card *, .research-item *, .ranking-copy *, .metric-card:nth-child(1) *,
+  .contact-section *, .site-footer *, .writing-outlet { color: #20232a!important; }
+  .research-profile-link, .ranking-links .text-link { border-color: #555; }
+}
